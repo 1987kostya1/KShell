@@ -1,0 +1,36 @@
+﻿<Window x:Class="KShell.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KShell"
+        xmlns:global="clr-namespace:"
+        xmlns:windows="clr-namespace:KShell.Windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStyle="None"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        global:WindowSinker.AlwaysOnBottom="True"
+        ShowInTaskbar="False">
+    
+    <DockPanel Background="#151520">
+        
+        <Grid VerticalAlignment="Bottom" Height="30" Background="#202025">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Name="TasksButton" Click="TasksButton_OnClick" Background="#303035" Width="30" Height="30" HorizontalAlignment="Left"></Button>
+
+            <UniformGrid Name="ProcGrid" Grid.Column="1" Rows="1" Height="30" Background="#252530" VerticalAlignment="Bottom">
+            </UniformGrid>
+            
+            <TextBlock Grid.Column="2" Name="TimeStr" Text="Time" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFFFF" Background="#202025"></TextBlock>
+            
+        </Grid>
+        
+        
+    </DockPanel>
+</Window>
