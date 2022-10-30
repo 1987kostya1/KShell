@@ -20,9 +20,11 @@ D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\ref\KShell.dll
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Controls\ProcessButton.g.cs
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Controls\ProcessButton.baml
-D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Windows\FileExplorer.g.cs
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Windows\MainWindow.g.cs
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Windows\StartMenu.g.cs
-D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Windows\FileExplorer.baml
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Windows\MainWindow.baml
 D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Windows\StartMenu.baml
+D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Controls\FileExplorer.g.cs
+D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Controls\FileExplorer.baml
+D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Controls\ExplorerFile.g.cs
+D:\Repos\KShell\KShell\obj\Debug\net6.0-windows\Controls\ExplorerFile.baml

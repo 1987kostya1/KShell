@@ -33,6 +33,11 @@ public partial class ProcessButton : Button
 
     public void UpdateText()
     {
-        MainText.Text = Process.GetProcessById(Process.Id).MainWindowTitle;
+        var title = Process.GetProcessById(Process.Id).MainWindowTitle;
+        if (title != "")
+        {
+            MainText.Text = title;
+        }
+        else MainText.Text = Process.ProcessName;
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KShell"
         xmlns:global="clr-namespace:"
-        xmlns:windows="clr-namespace:KShell.Windows"
+        xmlns:controls="clr-namespace:KShell.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         WindowStyle="None"
@@ -15,21 +15,31 @@
         ShowInTaskbar="False">
     
     <DockPanel Background="#151520">
-        
-        <Grid VerticalAlignment="Bottom" Height="30" Background="#202025">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="100"/>
-            </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Name="TasksButton" Click="TasksButton_OnClick" Background="#303035" Width="30" Height="30" HorizontalAlignment="Left"></Button>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <controls:FileExplorer Grid.Row="0" x:Name="TheExplorer"/>
+            
+            <Grid Grid.Row="1" VerticalAlignment="Bottom" Height="30" Background="#202025">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Name="TasksButton" Click="TasksButton_OnClick" Background="#303035" Width="30" Height="30" HorizontalAlignment="Left"></Button>
 
-            <UniformGrid Name="ProcGrid" Grid.Column="1" Rows="1" Height="30" Background="#252530" VerticalAlignment="Bottom">
-            </UniformGrid>
+                <UniformGrid Name="ProcGrid" Grid.Column="1" Rows="1" Height="30" Background="#252530" VerticalAlignment="Bottom">
+                </UniformGrid>
             
-            <TextBlock Grid.Column="2" Name="TimeStr" Text="Time" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFFFF" Background="#202025"></TextBlock>
+                <TextBlock Grid.Column="2" Name="TimeStr" Text="Time" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFFFF" Background="#202025"></TextBlock>
             
+            </Grid>
         </Grid>
+
+        
         
         
     </DockPanel>

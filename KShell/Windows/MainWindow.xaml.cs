@@ -45,7 +45,7 @@ namespace KShell
             {
                 ((ProcessButton)element).UpdateText();
             }   
-            
+
         }
 
 
@@ -77,6 +77,7 @@ namespace KShell
             });
             
             RefreshProcesses(-1);
+            TheExplorer.DisplayFolder($"C:\\Users\\{Environment.UserName}\\Desktop");
             
         }
 
@@ -190,6 +191,11 @@ namespace KShell
                 menu.Left = this.Left;
                 menu.Show();
             }
+        }
+
+        private void UIElement_OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

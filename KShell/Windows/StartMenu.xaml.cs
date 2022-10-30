@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using System.Windows;
-using KShell.Windows;
 
 namespace KShell;
 
@@ -34,6 +33,5 @@ public partial class StartMenu : Window
 
     private void ExplorerBtn_OnClick(object sender, RoutedEventArgs e)
     {
-        new FileExplorer().Show();
     }
 }
